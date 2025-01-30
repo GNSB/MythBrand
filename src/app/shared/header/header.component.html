@@ -1,0 +1,44 @@
+<section class="header-section">
+    <div class="header">
+        <div class="image">
+            <a href="/">
+                <img class="logo" src="assets/images/logo.png" alt="MythBrand">
+            </a>
+        </div>
+        <div class="searcher">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="shopping-cart" >
+            <img src="assets/images/shopcart.png" alt="Shopping Cart" style="width: 40px; height: 40px;">
+        </div>
+    </div>
+</section>
+
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+  
+
+    .header .searcher {
+        text-align: center;
+    }
+
+    .header .shopping-cart {
+        text-align: right;
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+        }
+
+        .header .searcher {
+            margin: 10px 0;
+        }
+    }
+</style>

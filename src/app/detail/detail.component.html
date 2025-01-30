@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <app-header></app-header>
+    <section class="details">
+        <div class="detail-item">
+            <div class="detail-image">
+                <img src="assets/images/Hoodie Khaki.png" alt="Product 1">
+            </div>
+            <div class="detail-description">
+                <h1>Unisex NuBlend® Fleece Pullover Hoodie</h1>
+                <p>$10.00</p>
+                <div class="styles">
+                    <label for="color">Color:</label>
+                    <div id="color" name="color">
+                        <button class="colorButton" type="button" style="background-color: #f00;" onclick="selectColor('red')"></button>
+                        <button class="colorButton" type="button" style="background-color: #00f;" onclick="selectColor('blue')"></button>
+                        <button class="colorButton" type="button" style="background-color: #0f0;" onclick="selectColor('green')"></button>
+                        <button class="colorButton" type="button" style="background-color: #000;" onclick="selectColor('black')"></button>
+                    </div>
+                </div>
+                <div class="sizes">
+                    <label for="size">Size:</label>
+                    <div id="size" name="size">
+                        <button class="sizeButton" type="button" onclick="selectSize('small')">Small</button>
+                        <button class="sizeButton" type="button" onclick="selectSize('medium')">Medium</button>
+                        <button class="sizeButton" type="button" onclick="selectSize('large')">Large</button>
+                        <button class="sizeButton" type="button" onclick="selectSize('xlarge')">X-Large</button>
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+       <div style="display: flex; justify-content: center; width:100%">
+        <div class="dropdown">
+            <button class="detailsButton" (click)="toggleDropdown()">Details</button>
+            <div id="dropdown-content" [style.display]="dropdownOpen ? 'block' : 'none'">
+                <p>This hoodie is made from a blend of cotton and polyester, providing comfort and durability. Perfect for casual wear or workouts.</p>
+                <p>This hoodie is made from a blend of cotton and polyester, providing comfort and durability. Perfect for casual wear or workouts.</p>
+
+                <p>This hoodie is made from a blend of cotton and polyester, providing comfort and durability. Perfect for casual wear or workouts.</p>
+
+                <p>This hoodie is made from a blend of cotton and polyester, providing comfort and durability. Perfect for casual wear or workouts.</p>
+
+                <p>This hoodie is made from a blend of cotton and polyester, providing comfort and durability. Perfect for casual wear or workouts.</p>
+
+            </div>
+        </div>
+       </div>
+    </section>
+</body>
+</html>
